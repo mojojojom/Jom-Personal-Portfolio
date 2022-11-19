@@ -1,0 +1,41 @@
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="time"],
+input[type="date"],
+input[type="email"],
+textarea,
+select {
+    display: inline-flex;
+    position: relative;
+    white-space: nowrap;
+    line-height: 1;
+    font-size: $input-font-size;
+    vertical-align: top;
+    border-radius: $input-radius;
+    margin: $space-xxs 0 $space-xs 0;
+    width: auto;
+    @include truncate;
+    color: $color-secondary; //change your text colour here
+    font-weight: $text-regular;
+    border: convert-rem(1px) solid rgba($grey-4, 1);
+
+    &::placeholder {
+        color: $grey-4;
+        font-weight: $text-light;
+        opacity: 1;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $grey-6;
+        border: convert-rem(1px) solid $grey-1;
+        background-color: rgba($grey-1, 0.02);
+        @include transform-timing($animation-time);
+    }
+}

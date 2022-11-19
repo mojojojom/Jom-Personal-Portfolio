@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="title" content="Jommel Dalisaymo | Web Developer">
+        <meta name="description" content="A personal website portfolio created to showcase my projects.">
+        <meta name="keywords" content="Jommel Dalisaymo, Jom Dalisaymo, Portfolio, Web Design, Website Portfolio">
+        <meta name="robots" content="index, nofollow">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="English">
+        <meta name="author" content="Jommel Dalisaymo">
+        <meta name="copyright" content="© 2022 by Jommel Dalisaymo">
+        <meta name="rating" content="safe for kids">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Jommel Dalisaymo | Web Developer">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="A personal website portfolio created to showcase my projects.">
+
+        <title>Jommel Dalisaymo | Web Developer</title>
+
+        <!-- STYLES -->
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/scss/main.min.css">
+        <!-- FONTAWESOME ICONS -->
+        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+        <!-- AOS -->
+        <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
+        <!-- ANIMATE CSS -->
+        <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css">
+        <!-- SLIDER CSS -->
+        <link rel="stylesheet" href="/node_modules/slick-master/slick/slick.css">
+    </head>
+    <body class="loading">
+    <!-- PRELOADER -->
+    <div class="loader-bg" id="loader-bg">
+        <div class="loader d-flex justify-content-center align-items-center">
+            <div class="loader-container">
+                <div class="loader-img-container">
+                    <img src="./src/images/LOGO_DARK.svg" alt="" class="loader-img ">
+                </div>
+                <div class="loader-text-container d-flex justify-content-center">
+                    <p class="poppins loader-text">LOADING</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- MAIN HEADER -->
+    <header class="main__header fixed-top" id="header__navbar">
+        <nav class="container-lg nav__hr" id="nav">
+            <div class="main__header-logo-wrap">
+                <a href="#" class="text-decoration-none"><img src="/src/images/LOGO_WHITE.svg" alt="LOGO"></a>
+            </div>
+            <div class="main__header-nav-wrap">
+                <div class="burger__menu has__hover" id="burger__menu">
+                    <span class="menu__1"></span>
+                    <span class="menu__2"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MENU OVERLAY -->
+    <div class="menu__overlay hide__menu" id="menu__overlay">
+        <div class="container">
+            <div class="row h-100">
+
+                <!-- LEFT -->
+                <div class="col col-left">
+                    <div class="menu__overlay-left-wrap" id="menu__overlay-left">
+                        <ul>
+                            <li class="nav__links"><a href="https://www.facebook.com/jom.dalisaymo.10" class="nav__links-link">FACEBOOK</a></li>
+                            <li class="nav__links"><a href="https://www.instagram.com/jeydee_dev/" class="nav__links-link">INSTAGRAM</a></li>
+                            <li class="nav__links"><a href="https://twitter.com/mojijooom" class="nav__links-link">TWITTER</a></li>
+                            <li class="nav__links"><a href="https://www.linkedin.com/in/jommel-dalisaymo-94b21414b/" class="nav__links-link">LINKEDIN</a></li>
+                            <li class="nav__links"><a href="https://github.com/mojojojom" class="nav__links-link">GITHUB</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CENTER -->
+                <div class="col col-center">
+                    <div class="menu__overlay-center-wrap" id="menu__overlay-center">
+
+                        <div class="menu__overlay-center-title-wrap">
+                            <p class="menu__overlay-center-title">LATEST PROJECT</p>
+                        </div>
+                        <div class="menu__overlay-center-img-wrap">
+                            <a href="#"><!--LINK-->
+                                <img class="menu__overlay-center-img" src="" alt=""><!--IMAGE-->
+                            </a>
+                        </div>
+                        <div class="menu__overlay-center-project-details-wrap">
+                            <p class="menu__overlay-center-project-title">SAMPLE TITLE<!--TITLE--></p>
+                            <p class="menu__overlay-center-project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut reprehenderit rem dolore molestiae, reiciendis neque quidem molestias pariatur quae iure dolores eligendi dolor maiores doloribus quo voluptatem omnis enim laudantium?<!--DESCRIPTION--></p>
+                        </div>
+                        <div class="menu__overlay-center-project-btn-wrap">
+                            <a href="#" class="menu__overlay-center-project-btn">VIEW ALL PROJECTS</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="col col-right">
+                    <div class="menu__overlay-right-wrap" id="menu__overlay-right">
+                        <ul>
+                            <!-- <li><a href="#" class="text-decoration-none menu-nav-links fw-bold nav__links {{ (request()->is('/')) ? 'menu-nav-active' : '' }}">HOME</a></li> -->
+                            <li class="nav__links"><a href="/" class="nav__links-link nav__links-link">HOME</a></li>
+                            <li class="nav__links"><a href="/about.html" class="nav__links-link">ABOUT</a></li>
+                            <li class="nav__links"><a href="/projects.html" class="nav__links-link nav__links-link-active">PROJECTS</a></li>
+                            <li class="nav__links"><a href="/contact.html" class="nav__links-link">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+        <!-- SCROLL TO TOP ICON -->
+        <div class="scrollToTop d-hidden animate__animated animate__faster" id="scrollToTop">
+            <a href="#">
+                <i class="fas fa-chevron-circle-up"></i>
+            </a>
+        </div>
+    
+        <!-- BANNER SECTION -->
+        <section class="p__banner-wrap">
+            <div class="container-lg h-100">
+                
+                <!-- TITLE -->
+                <div class="p__banner-title-wrap">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-8 col-sm-8 col-md-5 col-lg-5">
+                            <p class="p__banner-title-heading">PROJECTS</p>
+                            <p class="p__banner-title-heading">CREATED PROJECTS</p>
+                        </div>
+    
+                        <div class="col-12 col-sm-12 col-md-5 col-lg-5 d-none d-md-block">
+                            <div class="p__banner-title-divider"></div>
+                        </div>
+    
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2">
+                            <p class="p__banner-title-sub">2022 - <script>document.write(new Date().getFullYear())</script></p>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <!-- CONTENT -->
+                <div class="p__banner-projects-wrap">
+                    <ul class="p__banner-projects-list">
+    
+                        <li>
+                            <a href="#projectsModalDev" class="p__banner-projects-link" data-bs-toggle="modal" data-bs-target="#projectsModalDev">
+                                <p class="p__name"><span>Website Application</span><br>Callee's Kitchen</p>
+                                <p class="p__date">2022</p>
+                                <div class="hover__reveal-img">
+                                    <img class="hidden-img p__img"  src="/src/images/callees.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#projectsModalDesign" class="p__banner-projects-link" data-bs-toggle="modal" data-bs-target="#projectsModalDesign">
+                                <p class="p__name"><span>Website Design</span><br>Callee's Kitchen</p>
+                                <p class="p__date">2022</p>
+                                <div class="hover__reveal-img">
+                                    <img class="hidden-img p__img"  src="/src/images/callees.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#" class="p__banner-projects-link">
+                                <p class="p__name"><span>Website Application</span><br>Callee's Kitchen</p>
+                                <p class="p__date">2022</p>
+                                <div class="hover__reveal-img">
+                                    <img class="hidden-img p__img"  src="/src/images/callees.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#" class="p__banner-projects-link">
+                                <p class="p__name"><span>Website Design</span><br>Callee's Kitchen</p>
+                                <p class="p__date">2022</p>
+                                <div class="hover__reveal-img">
+                                    <img class="hidden-img p__img"  src="/src/images/callees.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#" class="p__banner-projects-link">
+                                <p class="p__name"><span>Website Design</span><br>Callee's Kitchen</p>
+                                <p class="p__date">2022</p>
+                                <div class="hover__reveal-img">
+                                    <img class="hidden-img p__img"  src="/src/images/callees.jpg" alt="">
+                                </div>
+                            </a>
+                        </li>
+    
+    
+                    </ul>
+    
+                </div>
+    
+            </div>
+        </section>
+    
+        <!-- Web Dev Modal -->
+        <div class="modal fade projectsModalDev projectsModal" id="projectsModalDev" tabindex="-1" aria-labelledby="projectsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-lg py-3">
+    
+                            <div class="modal-project-title-wrap">
+                                <p class="modal-project-title">Project Title</p>
+                                <p class="modal-project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo amet sint vero voluptate modi, quas commodi corporis consequatur nostrum. Tenetur, explicabo perferendis. Hic officiis itaque at! Facere possimus dolorum dolores!</p>
+                            </div>
+    
+                            <div class="modal-project-img-wrap">
+                                <div class="modal-project-img-inner-wrap">
+                                    <!-- <a href="#" class="modal-project-link"> -->
+                                        <div class="modal-project-overlay">
+                                            <a href="#" class="modal-project-overlay-btn">VIEW SITE <i class="fa-solid fa-arrow-right-long"></i></a>
+                                        </div>
+                                        <img src="/src/images/callees.jpg" alt="" class="modal-project-img">
+                                    <!-- </a> -->
+                                </div>
+                            </div>
+    
+                            <div class="modal-project-details-wrap">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="modal-project-details-feat-wrap">
+                                            <p class="modal-project-details-title">PROJECT FEATURES</p>
+                                            <div class="modal-project-details-feat-inner-wrap">
+                                                
+                                                <!-- FEATURES -->
+                                                
+                                                <div class="modal-project-details-feat">
+                                                    <div class="feat-num-wrap">
+                                                        <p class="feat-num">1</p>
+                                                    </div>
+                                                    <div class="feat-name-wrap">
+                                                        <p class="feat-name">Sample Feature</p>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="modal-project-details-feat">
+                                                    <div class="feat-num-wrap">
+                                                        <p class="feat-num">1</p>
+                                                    </div>
+                                                    <div class="feat-name-wrap">
+                                                        <p class="feat-name">Sample Feature</p>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="modal-project-details-feat">
+                                                    <div class="feat-num-wrap">
+                                                        <p class="feat-num">1</p>
+                                                    </div>
+                                                    <div class="feat-name-wrap">
+                                                        <p class="feat-name">Sample Feature</p>
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="modal-project-details-tech-wrap">
+                                            <p class="modal-project-details-title">TECHNOLOGY STACKS USED</p>
+                                            <div class="modal-project-details-stack-wrap">
+                                                <!-- STACKS -->
+                                                <div class="modal-project-details-stack">
+                                                    <img src="" alt="stack" class="modal-project-details-stack-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+        <!-- Web Design Modal -->
+        <div class="modal fade projectsModalDesign projectsModal" id="projectsModalDesign" tabindex="-1" aria-labelledby="projectsModalDesignLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-lg py-3 pb-0">
+    
+                            <div class="modal-project-title-wrap">
+                                <p class="modal-project-title">Project Title</p>
+                                <p class="modal-project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo amet sint vero voluptate modi, quas commodi corporis consequatur nostrum. Tenetur, explicabo perferendis. Hic officiis itaque at! Facere possimus dolorum dolores!</p>
+                            </div>
+    
+                            <div class="modal-project-img-wrap">
+                                <img src="/src/images/callees-full.jpeg" alt="" class="modal-project-img">
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <footer class="main__footer">
+        <div class="container-lg">
+            <div class="main__footer-copy-wrap">
+                <p class="main__footer-copy"><a href="#" class="main__footer-copy-link">Jommel Dalisaymo</a></p>
+                <!-- <i class="fa-regular fa-copyright"></i> <span>2022</span> -->
+            </div>
+            <div>
+                <ul class="main__footer-sm-wrap">
+                    <li class="main__footer-sm"><a href="https://www.facebook.com/jom.dalisaymo.10" class="main__footer-sm-link">FACEBOOK</a></li>
+                    <i class="fa-solid fa-circle mx-3 footer-divider"></i>
+                    <li class="main__footer-sm"><a href="https://www.instagram.com/jeydee_dev/" class="main__footer-sm-link">INSTAGRAM</a></li>
+                    <i class="fa-solid fa-circle mx-3 footer-divider"></i>
+                    <li class="main__footer-sm"><a href="https://twitter.com/mojijooom" class="main__footer-sm-link">TWITTER</a></li>
+                    <i class="fa-solid fa-circle mx-3 footer-divider"></i>
+                    <li class="main__footer-sm"><a href="https://www.linkedin.com/in/jommel-dalisaymo-94b21414b/" class="main__footer-sm-link">LINKEDIN</a></li>
+                    <i class="fa-solid fa-circle mx-3 footer-divider"></i>
+                    <li class="main__footer-sm"><a href="https://github.com/mojojojom" class="main__footer-sm-link">GITHUB</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- jQuery -->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- AOS -->
+    <script src="/node_modules/aos/dist/aos.js"></script>
+    <!-- SLIDER JS -->
+    <script src="/node_modules/slick-master/slick/slick.min.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JAVASCRIPT -->
+    <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script src="/js/app.js"></script>
+
+</body>
+</html>

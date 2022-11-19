@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="title" content="Jommel Dalisaymo | Web Developer">
+        <meta name="description" content="A personal website portfolio created to showcase my projects.">
+        <meta name="keywords" content="Jommel Dalisaymo, Jom Dalisaymo, Portfolio, Web Design, Website Portfolio">
+        <meta name="robots" content="index, nofollow">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="language" content="English">
+        <meta name="author" content="Jommel Dalisaymo">
+        <meta name="copyright" content="© 2022 by Jommel Dalisaymo">
+        <meta name="rating" content="safe for kids">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Jommel Dalisaymo | Web Developer">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+        <meta property="og:description" content="A personal website portfolio created to showcase my projects.">
+
+        <title>Jommel Dalisaymo | Web Developer</title>
+
+        <!-- STYLES -->
+        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/scss/main.min.css">
+        <!-- FONTAWESOME ICONS -->
+        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+        <!-- AOS -->
+        <link rel="stylesheet" href="/node_modules/aos/dist/aos.css">
+        <!-- ANIMATE CSS -->
+        <link rel="stylesheet" href="/node_modules/animate.css/animate.min.css">
+        <!-- SLIDER CSS -->
+        <link rel="stylesheet" href="/node_modules/slick-master/slick/slick.css">
+    </head>
+    <body class="loading">
+    <!-- PRELOADER -->
+    <div class="loader-bg" id="loader-bg">
+        <div class="loader d-flex justify-content-center align-items-center">
+            <div class="loader-container">
+                <div class="loader-img-container">
+                    <img src="./src/images/LOGO_DARK.svg" alt="" class="loader-img ">
+                </div>
+                <div class="loader-text-container d-flex justify-content-center">
+                    <p class="poppins loader-text">LOADING</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- MAIN HEADER -->
+    <header class="main__header fixed-top" id="header__navbar">
+        <nav class="container-lg nav__hr" id="nav">
+            <div class="main__header-logo-wrap">
+                <a href="#" class="text-decoration-none"><img src="/src/images/LOGO_WHITE.svg" alt="LOGO"></a>
+            </div>
+            <div class="main__header-nav-wrap">
+                <div class="burger__menu has__hover" id="burger__menu">
+                    <span class="menu__1"></span>
+                    <span class="menu__2"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MENU OVERLAY -->
+    <div class="menu__overlay hide__menu" id="menu__overlay">
+        <div class="container">
+            <div class="row h-100">
+
+                <!-- LEFT -->
+                <div class="col col-left">
+                    <div class="menu__overlay-left-wrap" id="menu__overlay-left">
+                        <ul>
+                            <li class="nav__links"><a href="https://www.facebook.com/jom.dalisaymo.10" class="nav__links-link">FACEBOOK</a></li>
+                            <li class="nav__links"><a href="https://www.instagram.com/jeydee_dev/" class="nav__links-link">INSTAGRAM</a></li>
+                            <li class="nav__links"><a href="https://twitter.com/mojijooom" class="nav__links-link">TWITTER</a></li>
+                            <li class="nav__links"><a href="https://www.linkedin.com/in/jommel-dalisaymo-94b21414b/" class="nav__links-link">LINKEDIN</a></li>
+                            <li class="nav__links"><a href="https://github.com/mojojojom" class="nav__links-link">GITHUB</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- CENTER -->
+                <div class="col col-center">
+                    <div class="menu__overlay-center-wrap" id="menu__overlay-center">
+
+                        <div class="menu__overlay-center-title-wrap">
+                            <p class="menu__overlay-center-title">LATEST PROJECT</p>
+                        </div>
+                        <div class="menu__overlay-center-img-wrap">
+                            <a href="#"><!--LINK-->
+                                <img class="menu__overlay-center-img" src="" alt=""><!--IMAGE-->
+                            </a>
+                        </div>
+                        <div class="menu__overlay-center-project-details-wrap">
+                            <p class="menu__overlay-center-project-title">SAMPLE TITLE<!--TITLE--></p>
+                            <p class="menu__overlay-center-project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut reprehenderit rem dolore molestiae, reiciendis neque quidem molestias pariatur quae iure dolores eligendi dolor maiores doloribus quo voluptatem omnis enim laudantium?<!--DESCRIPTION--></p>
+                        </div>
+                        <div class="menu__overlay-center-project-btn-wrap">
+                            <a href="#" class="menu__overlay-center-project-btn">VIEW ALL PROJECTS</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT -->
+                <div class="col col-right">
+                    <div class="menu__overlay-right-wrap" id="menu__overlay-right">
+                        <ul>
+                            <!-- <li><a href="#" class="text-decoration-none menu-nav-links fw-bold nav__links {{ (request()->is('/')) ? 'menu-nav-active' : '' }}">HOME</a></li> -->
+                            <li class="nav__links"><a href="/" class="nav__links-link nav__links-link">HOME</a></li>
+                            <li class="nav__links"><a href="/about.html" class="nav__links-link nav__links-link-active">ABOUT</a></li>
+                            <li class="nav__links"><a href="/projects.html" class="nav__links-link">PROJECTS</a></li>
+                            <li class="nav__links"><a href="/contact.html" class="nav__links-link">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+        <!-- SCROLL TO TOP ICON -->
+        <div class="scrollToTop d-hidden animate__animated animate__faster" id="scrollToTop">
+            <a href="#">
+                <i class="fas fa-chevron-circle-up"></i>
+            </a>
+        </div>
+    
+        <!-- BANNER SECTION -->
+        <section class="a__banner-wrap">
+            <div class="container-lg h-100">
+    
+                <!-- TITLE -->
+                <div class="a__banner-title-wrap">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-8 col-sm-8 col-md-5 col-lg-5">
+                            <p class="a__banner-title-heading">ABOUT</p>
+                            <p class="a__banner-title-heading">GET TO KNOW ME</p>
+                        </div>
+    
+                        <div class="col-12 col-sm-12 col-md-5 col-lg-5 d-none d-md-block">
+                            <div class="a__banner-title-divider"></div>
+                        </div>
+    
+                        <div class="col-4 col-sm-4 col-md-2 col-lg-2">
+                            <p class="a__banner-title-sub">WHO AM I</p>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <!-- CONTENT -->
+                <div class="row h-100 pt-4 pt-sm-4 pt-md-3 pt-lg-3">
+    
+                    <div class="col-12 col-lg-6">
+                        <div class="a__banner-left-wrap">
+                            <div>
+                                <p class="a__banner-left-title">I'm <span>Jommel Dalisaymo</span></p>
+                                <p class="a__banner-left-title">Web Designer / Web Developer</p>
+                                <p class="a__banner-left-title-sub">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit enim eveniet accusantium distinctio, laudantium fuga atque a unde voluptate, autem, nesciunt nisi beatae dolore doloremque ipsa magni hic dicta. Consequatur.</p>
+                                
+                                <div class="a__banner-left-btn-wrap">
+                                    <a href="http://" class="a__banner-left-btn">VIEW PROJECTS</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-lg-6">
+                        <div class="a__banner-right-wrap">
+                            <div class="a__banner-img-wrap">
+                                <img src="" alt="" class="a__banner-img">
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    
+        <!-- DETAILS SECTION -->
+        <section class="a__details-wrap">
+            <div class="container-lg">
+    
+                <div class="row">
+    
+                    <div class="col-12 col-lg-4">
+                        <div class="a__details-left-wrap row">
+    
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-12">
+                                <div class="a__details-left-title-wrap">
+                                    <p class="a__details-left-title">Want to hire me as a Freelancer?</p>
+                                    <p class="a__details-left-title-sub">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima fuga nulla iusto. Consectetur, dicta vitae rem fuga ab porro expedita quisquam asperiores! Incidunt quisquam iure accusantium doloremque quia? Illum, mollitia?</p>
+                                </div>
+                            </div>
+    
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-12">
+                                <div class="a__details-left-title-wrap">
+                                    <p class="a__details-left-title">SOCIAL LINKS</p>
+                                    <ul class="a__details-left-sm-wrap">
+                                        <li class="a__details-left-sm-links"><a href="#" class="a__details-left-sm-link">Facebook</a></li>
+                                        <li class="a__details-left-sm-links"><a href="#" class="a__details-left-sm-link">Instagram</a></li>
+                                        <li class="a__details-left-sm-links"><a href="#" class="a__details-left-sm-link">Twitter</a></li>
+                                        <li class="a__details-left-sm-links"><a href="#" class="a__details-left-sm-link">Linked In</a></li>
+                                        <li class="a__details-left-sm-links"><a href="#" class="a__details-left-sm-link">Github</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-lg-8">
+                        <div class="a__details-right-wrap">
+                            
+                            <p class="a__details-right-title">TECHNOLOGY STACKS</p>
+                            <div class="a__details-right-stack-wrap">
+                                <!-- STACKS -->
+                                <div class="a__details-right-stack">
+                                    <img src="" alt="stack" class="a__details-right-stack-img">
+                                </div>
+                            </div>
+    
+                            <p class="a__details-right-title">RECOMMENDATIONS</p>
+                            <div class="a__details-right-recos-wrap">
+                                <!-- SLIDER -->
+                                
+                                <div class="a__details-right-recos">
+                                    <div class="card">
+                                        <div class="card-body">
+    
+                                            <div class="a__details-right-recos-id-wrap">
+                                                <img src="/src/images/sample-reco.webp" alt="Recos Image" class="a__details-right-recos-id-img img-fluid">
+                                                <div class="a__details-right-recos-id-name-wrap">
+                                                    <p class="a__details-right-recos-id-name">Name Unknown</p>
+                                                    <p class="a__details-right-recos-id-position">Sample Company</p>
+                                                </div>
+                                            </div>
+    
+                                            <div class="a__details-right-recos-testi-wrap">
+                                                <p class="a__details-right-recos-testi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nam corporis non debitis, minus harum excepturi, molestiae quisquam tempora, magni fugiat odio suscipit nostrum perferendis fuga provident. Natus, consequuntur nisi?</p>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="a__details-right-recos">
+                                    <div class="card">
+                                        <div class="card-body">
+    
+                                            <div class="a__details-right-recos-id-wrap">
+                                                <img src="/src/images/sample-reco.webp" alt="Recos Image" class="a__details-right-recos-id-img img-fluid">
+                                                <div class="a__details-right-recos-id-name-wrap">
+                                                    <p class="a__details-right-recos-id-name">Name Unknown</p>
+                                                    <p class="a__details-right-recos-id-position">Sample Company</p>
+                                                </div>
+                                            </div>
+    
+                                            <div class="a__details-right-recos-testi-wrap">
+                                                <p class="a__details-right-recos-testi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nam corporis non debitis, minus harum excepturi, molestiae quisquam tempora, magni fugiat odio suscipit nostrum perferendis fuga provident. Natus, consequuntur nisi?</p>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="a__details-right-recos">
+                                    <div class="card">
+                                        <div class="card-body">
+    
+                                            <div class="a__details-right-recos-id-wrap">
+                                                <img src="/src/images/sample-reco.webp" alt="Recos Image" class="a__details-right-recos-id-img img-fluid">
+                                                <div class="a__details-right-recos-id-name-wrap">
+                                                    <p class="a__details-right-recos-id-name">Name Unknown</p>
+                                                    <p class="a__details-right-recos-id-position">Sample Company</p>
+                                                </div>
+                                            </div>
+    
+                                            <div class="a__details-right-recos-testi-wrap">
+                                                <p class="a__details-right-recos-testi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nam corporis non debitis, minus harum excepturi, molestiae quisquam tempora, magni fugiat odio suscipit nostrum perferendis fuga provident. Natus, consequuntur nisi?</p>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="a__details-right-recos">
+                                    <div class="card">
+                                        <div class="card-body">
+    
+                                            <div class="a__details-right-recos-id-wrap">
+                                                <img src="/src/images/sample-reco.webp" alt="Recos Image" class="a__details-right-recos-id-img img-fluid">
+                                                <div class="a__details-right-recos-id-name-wrap">
+                                                    <p class="a__details-right-recos-id-name">Name Unknown</p>
+                                                    <p class="a__details-right-recos-id-position">Sample Company</p>
+                                                </div>
+                                            </div>
+    
+                                            <div class="a__details-right-recos-testi-wrap">
+                                                <p class="a__details-right-recos-testi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nam corporis non debitis, minus harum excepturi, molestiae quisquam tempora, magni fugiat odio suscipit nostrum perferendis fuga provident. Natus, consequuntur nisi?</p>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="a__details-right-recos">
+                                    <div class="card">
+                                        <div class="card-body">
+    
+                                            <div class="a__details-right-recos-id-wrap">
+                                                <img src="/src/images/sample-reco.webp" alt="Recos Image" class="a__details-right-recos-id-img img-fluid">
+                                                <div class="a__details-right-recos-id-name-wrap">
+                                                    <p class="a__details-right-recos-id-name">Name Unknown</p>
+                                                    <p class="a__details-right-recos-id-position">Sample Company</p>
+                                                </div>
+                                            </div>
+    
+                                            <div class="a__details-right-recos-testi-wrap">
+                                                <p class="a__details-right-recos-testi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nam corporis non debitis, minus harum excepturi, molestiae quisquam tempora, magni fugiat odio suscipit nostrum perferendis fuga provident. Natus, consequuntur nisi?</p>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                </div>
+    
+            </div>
+        </section>
+    
+        <!-- EXPERIENCES SECTION -->
+        <section class="a__exp-wrap">
+            <div class="container-lg">
+    
+                <div class="a__exp-inner-wrap">
+    
+                    <div class="a__exp-main-title-wrap">
+                        <p class="a__exp-main-title">EXPERIENCES</p>
+                    </div>
+    
+                    <div class="a__exp-slide-wrap">
+    
+                        <div class="a__exp-slide-inner-wrap">
+                            <div class="a__exp-slide">
+    
+                                <div class="a__exp-slide-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80" alt="" class="a__exp-slide-img">
+                                </div>
+    
+                                <div class="a__exp-slide-content-head-wrap">
+                                    <i class="fa-solid fa-map-pin"></i>
+                                    <p class="a__exp-slide-content-head">2022</p>
+                                    <span class="a__exp-slide-content-head-line"></span>
+                                </div>
+    
+                                <div class="a__exp-slide-content-wrap">
+                                    <p class="a__exp-slide-title">Web Developer Intern</p>
+                                    <p class="a__exp-slide-title">iFormatLogic Solutions</p>
+                                    <p class="a__exp-slide-title-sub">Became an inter as an assistant web developer. Performed web development tasks, assisted in the design and development of website applications, and communicated closely with Senior Web Developers.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="a__exp-slide-inner-wrap">
+                            <div class="a__exp-slide">
+    
+                                <div class="a__exp-slide-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1462536943532-57a629f6cc60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80" alt="" class="a__exp-slide-img">
+                                </div>
+    
+                                <div class="a__exp-slide-content-head-wrap">
+                                    <i class="fa-solid fa-map-pin"></i>
+                                    <p class="a__exp-slide-content-head">2022</p>
+                                    <span class="a__exp-slide-content-head-line"></span>
+                                </div>
+    
+                                <div class="a__exp-slide-content-wrap">
+                                    <p class="a__exp-slide-title">Graduation</p>
+                                    <p class="a__exp-slide-title">President Ramon Magsaysay State University</p>
+                                    <p class="a__exp-slide-title-sub">Graduated with a Bachelor’s Degree in Information Technology</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="a__exp-slide-inner-wrap">
+                            <div class="a__exp-slide">
+    
+                                <div class="a__exp-slide-img-wrap">
+                                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" alt="" class="a__exp-slide-img">
+                                </div>
+    
+                                <div class="a__exp-slide-content-head-wrap">
+                                    <i class="fa-solid fa-map-pin"></i>
+                                    <p class="a__exp-slide-content-head">2022</p>
+                                    <span class="a__exp-slide-content-head-line"></span>
+                                </div>
+    
+                                <div class="a__exp-slide-content-wrap">
+                                    <p class="a__exp-slide-title">Web Developer</p>
+                                    <p class="a__exp-slide-title">iFormatLogic Solutions</p>
+                                    <p class="a__exp-slide-title-sub">Got absorbed and became a web developer. Handled projects and performed tasks about web application development.</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="a__exp-slide-inner-wrap">
+                            <div class="a__exp-slide">
+    
+                                <div class="a__exp-slide-img-wrap">
+                                    <!-- <img src="#" alt="" class="a__exp-slide-img"> -->
+                                    <div class="card-skel-img card-skel"></div>
+                                </div>
+    
+                                <div class="a__exp-slide-content-head-wrap">
+                                    <i class="fa-solid fa-map-pin"></i>
+                                    <!-- <p class="a__exp-slide-content-head">2022</p> -->
+                                    <div class="card-skel card-skel-date"></div>
+                                    <span class="a__exp-slide-content-head-line"></span>
+                                </div>
+    
+                                <div class="a__exp-slide-content-wrap">
+                                    <div class="card-skel card-skel-title"></div>
+                                    <div class="card-skel card-skel-title"></div>
+                                    <div class="card-skel card-skel-sub"></div>
+                                    <div class="card-skel card-skel-sub"></div>
+                                    <div class="card-skel card-skel-sub"></div>
+                                    <div class="card-skel card-skel-sub"></div>
+                                    <!-- <p class="a__exp-slide-title">Web Developer Intern</p>
+                                    <p class="a__exp-slide-title">iFormatLogic Solutions</p>
+                                    <p class="a__exp-slide-title-sub">Became an inter as an assistant web developer. Performed web development tasks, assisted in the design and development of website applications, and communicated closely with Senior Web Developers.</p> -->
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+        </section>
+    
+        <!-- CERTIFICATES SECTION -->
+        <section class="a__cert-wrap">
+            <div class="container-lg">
+    
+                <div class="a__cert-inner-wrap">
+    
+                    <div class="a__cert-main-title-wrap">
+                        <p class="a__cert-main-title">CERTIFICATES</p>
+                    </div>
+                    
+                    <div class="a__cert-cards-wrap">
+    
+                        <div class="row">
+    
+                            <div class="col-card col-12 col-sm-12 col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-skel-title card-skel"></div>
+                                        <div class="card-skel-sub card-skel"></div>
+                                        <div class="card-skel-link card-skel"></div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-card col-12 col-sm-12 col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-skel-title card-skel"></div>
+                                        <div class="card-skel-sub card-skel"></div>
+                                        <div class="card-skel-link card-skel"></div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-card col-12 col-sm-12 col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-skel-title card-skel"></div>
+                                        <div class="card-skel-sub card-skel"></div>
+                                        <div class="card-skel-link card-skel"></div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-card col-12 col-sm-12 col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-skel-title card-skel"></div>
+                                        <div class="card-skel-sub card-skel"></div>
+                                        <div class="card-skel-link card-skel"></div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-card col-12 col-sm-12 col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-skel-title card-skel"></div>
+                                        <div class="card-skel-sub card-skel"></div>
+                                        <div class="card-skel-link card-skel"></div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-card col-12 col-sm-12 col-md-6 col-lg-4">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="card-skel-title card-skel"></div>
+                                        <div class="card-skel-sub card-skel"></div>
+                                        <div class="card-skel-link card-skel"></div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+        </section>
+
+
+    <footer class="main__footer">
+        <div class="container-lg">
+            <div class="main__footer-copy-wrap">
+                <p class="main__footer-copy"><a href="#" class="main__footer-copy-link">Jommel Dalisaymo</a></p>
+                <!-- <i class="fa-regular fa-copyright"></i> <span>2022</span> -->
+            </div>
+            <div>
+                <ul class="main__footer-sm-wrap">
+                    <li class="main__footer-sm"><a href="https://www.facebook.com/jom.dalisaymo.10" class="main__footer-sm-link">FACEBOOK</a></li>
+                    <i class="fa-solid fa-circle mx-3 footer-divider"></i>
+                    <li class="main__footer-sm"><a href="https://www.instagram.com/jeydee_dev/" class="main__footer-sm-link">INSTAGRAM</a></li>
+                    <i class="fa-solid fa-circle mx-3 footer-divider"></i>
+                    <li class="main__footer-sm"><a href="https://twitter.com/mojijooom" class="main__footer-sm-link">TWITTER</a></li>
+                    <i class="fa-solid fa-circle mx-3 footer-divider"></i>
+                    <li class="main__footer-sm"><a href="https://www.linkedin.com/in/jommel-dalisaymo-94b21414b/" class="main__footer-sm-link">LINKEDIN</a></li>
+                    <i class="fa-solid fa-circle mx-3 footer-divider"></i>
+                    <li class="main__footer-sm"><a href="https://github.com/mojojojom" class="main__footer-sm-link">GITHUB</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- jQuery -->
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- AOS -->
+    <script src="/node_modules/aos/dist/aos.js"></script>
+    <!-- SLIDER JS -->
+    <script src="/node_modules/slick-master/slick/slick.min.js"></script>
+    <!-- BOOTSTRAP -->
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JAVASCRIPT -->
+    <script>
+        AOS.init();
+    </script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script src="/js/app.js"></script>
+
+</body>
+</html>
