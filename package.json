@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "NODE_ENV=development ./node_modules"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jommel Dalisaymo",
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.0",
@@ -17,5 +17,14 @@
     "font-awesome": "^4.7.0",
     "include-media": "^1.4.10",
     "jquery": "^3.6.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mojojojom/Jom-Personal-Portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mojojojom/Jom-Personal-Portfolio/issues"
+  },
+  "homepage": "https://github.com/mojojojom/Jom-Personal-Portfolio#readme"
 }
