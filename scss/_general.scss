@@ -586,7 +586,7 @@ input[type=number] {
         height: 100%;
         position: relative;
     }
-    .col {
+    .c__col {
         display: flex;
         align-items: center;
     }
@@ -614,9 +614,13 @@ input[type=number] {
                 transition: all ease $quick-animation-time;
                 position: relative;
                 text-transform:capitalize;
+                @include media('<=desktop') {
+                    font-size: 30px;
+                    font-weight: $bold;
+                }
                 @include media('<=tablet') {
                     font-size: 20px;
-                    font-weight: $normal;
+                    font-weight: $semibold;
                 }
                 @include media('<=lg-phone') {
                     font-size: 14px;
@@ -736,6 +740,9 @@ input[type=number] {
                         }
                     }
                     
+                }
+                @include media('<=desktop') {
+                    font-size: 45px;
                 }
                 @include media('<=tablet') {
                     font-size: 50px;
