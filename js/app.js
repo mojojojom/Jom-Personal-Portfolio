@@ -147,8 +147,12 @@ jQuery(function() {
 // PRE-LOADER
 var loader = document.getElementById('loader-bg');
 window.addEventListener("load", function(){
-    loader.style.display = "none";
-    $('body').removeClass('loading');
+    // loader.style.display = "none";
+    // $('body').removeClass('loading');
+    window.setTimeout(function() {
+        loader.style.display = "none";
+        $('body').removeClass('loading');
+    }, 3000);
 });
 
 
