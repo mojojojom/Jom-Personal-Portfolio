@@ -14,12 +14,18 @@ body {
 body {
     position: relative;
     font-family: $poppins;
-    cursor: none;
+    cursor: none;    
+    @include media('<=tablet') {
+        cursor: auto;
+    }
 }
 
 a {
     text-decoration: none;
     cursor: none;
+    @include media('<=tablet') {
+        cursor: auto;
+    }
 }
 button {
     cursor: none;
@@ -84,6 +90,9 @@ input[type=number] {
     top: 0;
     transform: translate(calc(-50% + 15px), -50%);
     z-index: 99999;
+    @include media('<=tablet') {
+        display: none;
+    }
 }
 
 .cursor2 {
@@ -97,11 +106,17 @@ input[type=number] {
     pointer-events: none;
     transition: width .3s, height .3s, opacity .3s;
     z-index: 99999;
+    @include media('<=tablet') {
+        display: none;
+    }
 }
 
 .hover {
     background-color: $cursor-col-hover;
     opacity: 0.3;
+    @include media('<=tablet') {
+        display: none;
+    }
 }
 
 .cursorinnerhover {
