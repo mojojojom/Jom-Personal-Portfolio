@@ -72,7 +72,7 @@
             <div class="row h-100">
 
                 <!-- LEFT -->
-                <div class="col col-left">
+                <div class="c__col col-3 col-left">
                     <div class="menu__overlay-left-wrap" id="menu__overlay-left">
                         <ul>
                             <li class="nav__links"><a href="https://www.facebook.com/jom.dalisaymo.10" class="nav__links-link">FACEBOOK</a></li>
@@ -85,19 +85,19 @@
                 </div>
 
                 <!-- CENTER -->
-                <div class="col col-center">
+                <div class="c__col col-5 col-center">
                     <div class="menu__overlay-center-wrap" id="menu__overlay-center">
 
                         <div class="menu__overlay-center-title-wrap">
-                            <p class="menu__overlay-center-title">LATEST PROJECT</p>
+                            <p class="menu__overlay-center-title mb-0">LATEST PROJECT</p>
                         </div>
                         <div class="menu__overlay-center-img-wrap">
                             <a href="#"><!--LINK-->
-                                <img class="menu__overlay-center-img" src="" alt=""><!--IMAGE-->
+                                <img class="menu__overlay-center-img" src="/src/images/callees.jpg" alt=""><!--IMAGE-->
                             </a>
                         </div>
                         <div class="menu__overlay-center-project-details-wrap">
-                            <p class="menu__overlay-center-project-title">SAMPLE TITLE<!--TITLE--></p>
+                            <p class="menu__overlay-center-project-title">CALLEE'S KITCHEN<!--TITLE--></p>
                             <p class="menu__overlay-center-project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut reprehenderit rem dolore molestiae, reiciendis neque quidem molestias pariatur quae iure dolores eligendi dolor maiores doloribus quo voluptatem omnis enim laudantium?<!--DESCRIPTION--></p>
                         </div>
                         <div class="menu__overlay-center-project-btn-wrap">
@@ -108,11 +108,10 @@
                 </div>
 
                 <!-- RIGHT -->
-                <div class="col col-right">
+                <div class="c__col col-4 col-right">
                     <div class="menu__overlay-right-wrap" id="menu__overlay-right">
                         <ul>
-                            <!-- <li><a href="#" class="text-decoration-none menu-nav-links fw-bold nav__links {{ (request()->is('/')) ? 'menu-nav-active' : '' }}">HOME</a></li> -->
-                            <li class="nav__links"><a href="/" class="nav__links-link nav__links-link">HOME</a></li>
+                            <li class="nav__links"><a href="/" class="nav__links-link">HOME</a></li>
                             <li class="nav__links"><a href="/about.html" class="nav__links-link">ABOUT</a></li>
                             <li class="nav__links"><a href="/projects.html" class="nav__links-link nav__links-link-active">PROJECTS</a></li>
                             <li class="nav__links"><a href="/contact.html" class="nav__links-link">CONTACT</a></li>
@@ -223,8 +222,8 @@
         <div class="modal fade projectsModalDev projectsModal" id="projectsModalDev" tabindex="-1" aria-labelledby="projectsModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                    <div class="modal-header has__hover" data-bs-dismiss="modal" aria-label="Close">
+                        <button type="button" class="has__hover" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                     </div>
                     <div class="modal-body">
                         <div class="container-lg py-3">
@@ -237,12 +236,10 @@
     
                             <div class="modal-project-img-wrap">
                                 <div class="modal-project-img-inner-wrap">
-                                    <!-- <a href="#" class="modal-project-link"> -->
-                                        <div class="modal-project-overlay">
-                                            <a href="#" class="modal-project-overlay-btn">VIEW SITE <i class="fa-solid fa-arrow-right-long"></i></a>
-                                        </div>
-                                        <img src="/src/images/callees.jpg" alt="" class="modal-project-img">
-                                    <!-- </a> -->
+                                    <div class="modal-project-overlay">
+                                        <a href="#" class="modal-project-overlay-btn">VIEW SITE <i class="fa-solid fa-arrow-right-long"></i></a>
+                                    </div>
+                                    <img src="/src/images/callees.jpg" alt="" class="modal-project-img">
                                 </div>
                             </div>
     
@@ -292,7 +289,7 @@
                                             <div class="modal-project-details-stack-wrap">
                                                 <!-- STACKS -->
                                                 <div class="modal-project-details-stack">
-                                                    <img src="" alt="stack" class="modal-project-details-stack-img">
+                                                    <img src="/src/stacks/html.svg" alt="stack" class="modal-project-details-stack-img">
                                                 </div>
                                             </div>
                                         </div>
@@ -311,8 +308,8 @@
         <div class="modal fade projectsModalDesign projectsModal" id="projectsModalDesign" tabindex="-1" aria-labelledby="projectsModalDesignLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                    <div class="modal-header has__hover" data-bs-dismiss="modal" aria-label="Close">
+                        <button type="button" class="has__hover" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                     </div>
                     <div class="modal-body">
                         <div class="container-lg py-3 pb-0">

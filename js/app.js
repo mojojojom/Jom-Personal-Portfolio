@@ -64,6 +64,7 @@ var cursor = document.querySelector('.cursor');
 var cursorinner = document.querySelector('.cursor2');
 var a = document.querySelectorAll('a');
 var hasHover = document.querySelectorAll('.has__hover');
+var btns = document.querySelectorAll('button');
 
 document.addEventListener('mousemove', function(e){
     var x = e.clientX;
@@ -100,6 +101,14 @@ hasHover.forEach(item => {
         cursor.classList.remove('hover');
     });
 })
+btns.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        cursor.classList.add('hover');
+    });
+    item.addEventListener('mouseleave', () => {
+        cursor.classList.remove('hover');
+    });
+});
 
 // MEDIA QUERY
 
