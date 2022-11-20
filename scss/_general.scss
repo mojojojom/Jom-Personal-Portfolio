@@ -1344,6 +1344,36 @@ input[type=number] {
             bottom: 30px;
         }
     }
+    &-btn {
+        &-wrap {
+            padding-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        display: inline-block;
+        background: transparent;
+        text-transform: uppercase;
+        font-size: 16px;
+        letter-spacing: 0.3em;
+        color: $txt-dark;
+        border-radius: 0;
+        padding: 10px 30px;
+        transition: all 0.5s ease-out;
+        background: linear-gradient(270deg, hsl(0, 0%, 13%), hsl(180, 5%, 8%), rgba(34,34,34,0), rgba(34,34,34,0));
+        background-position: 1% 50%;
+        background-size: 300% 300%;
+        text-decoration: none;
+        border: none;
+        border: 1px solid $bg-dark;
+        &:hover {
+            color: $txt-light;
+            border: 1px solid $bg-dark;
+            background-position: 99% 50%;
+        }
+        @include media('<=phone') {
+            font-size: 14px;
+        }
+    }
 }
 
 // PROJECTS
@@ -1763,7 +1793,7 @@ input[type=number] {
             }
         }
         &-links {
-            background-color: $bg-darker;
+            background-color: $bg-dark;
             width: 50px;
             height: 50px;
             transition: all ease $quick-animation-time;
