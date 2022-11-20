@@ -1296,7 +1296,7 @@ input[type=number] {
                 font-size: 60px;
             }
             @include media('<=phone') {
-                font-size: 40px;
+                font-size: 50px;
                 margin-bottom: 15px;
             }
         }
@@ -1414,7 +1414,7 @@ input[type=number] {
                 "sec1 sec2"
                 "sec1 sec3"
                 "sec1 sec4";
-            grid-gap: 20px;
+            grid-gap: 10px;
             min-height: 80vh;
             @include media('>=desktop') {
                 height: 80vh;
