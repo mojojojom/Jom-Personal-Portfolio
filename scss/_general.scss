@@ -207,6 +207,15 @@ input[type=number] {
         }
         &-project {
             &-title {
+                &-sub {
+                    color: $txt-dark;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    margin-bottom: 0;
+                    @include media('<=lg-phone') {
+                        font-size: 12px;
+                    }
+                }
                 color: $txt-dark;
                 font-size: 25px;
                 font-weight: $bold;
@@ -227,6 +236,7 @@ input[type=number] {
                 font-size: 18px;
                 @include media('<=lg-phone') {
                     font-size: 16px;
+                    line-height: 18px;
                 }
             }
             &-img {
@@ -284,6 +294,9 @@ input[type=number] {
                 visibility: hidden;
                 opacity: 0;
                 transition: all ease-in-out $quick-animation-time;
+                @include media('<=lg-phone') {
+                    border-radius: 15px;
+                }
 
                 &-btn {
                     display: inline-flex;
@@ -459,6 +472,15 @@ input[type=number] {
         }
         &-project {
             &-title {
+                &-sub {
+                    color: $txt-dark;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    margin-bottom: 0;
+                    @include media('<=lg-phone') {
+                        font-size: 12px;
+                    }
+                }
                 color: $txt-dark;
                 font-size: 25px;
                 font-weight: $bold;
@@ -479,6 +501,7 @@ input[type=number] {
                 font-size: 18px;
                 @include media('<=lg-phone') {
                     font-size: 16px;
+                    line-height: 18px;
                 }
             }
             &-img {
