@@ -1,3 +1,7 @@
+// TOOLTIP
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 // NAVBAR ANIMATION
 var lastScrollTop;
 navbar = document.getElementById('header__navbar');
@@ -161,6 +165,7 @@ window.addEventListener("load", function(){
     window.setTimeout(function() {
         loader.style.display = "none";
         $('body').removeClass('loading');
+        $('.loader-bg').addClass('hide');
     }, 3000);
 });
 

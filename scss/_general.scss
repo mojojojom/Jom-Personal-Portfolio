@@ -539,6 +539,17 @@ input[type=number] {
     width: 0!important;
 }
 
+.hide {
+    animation: scale-out-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.custom-tooltip {
+    font-family: $poppins;
+    --bs-tooltip-padding-x: 8px;
+    --bs-tooltip-padding-y: 8px;
+    --bs-tooltip-color: $bg-darker!important;
+    --bs-tooltip-bg: $txt-light!important;
+}
 
 
 
