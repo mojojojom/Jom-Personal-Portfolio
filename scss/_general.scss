@@ -82,8 +82,8 @@ input[type=number] {
     appearance: textfield;
 }
 .cursor {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
     border: 2px solid $cursor-col;
     transition: all 200ms ease-out;
@@ -1032,7 +1032,7 @@ input[type=number] {
                 }
                 
             }
-            &:last-child {
+            &:nth-child(3) {
                 color: $txt-md-light;
                 font-size: 30px;
                 font-family: $playfair;
@@ -1089,6 +1089,42 @@ input[type=number] {
                         }
                     }
                 }
+            }
+        }
+        &-btn {
+            margin-top: 20px;
+            display: inline-block;
+            background: transparent;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: $semibold;
+            letter-spacing: 0.1em;
+            color: $txt-light;
+            border-radius: 0;
+            padding: 10px 10px;
+            transition: all 0.5s ease-out;
+            background: linear-gradient(270deg, rgb(255, 255, 255), rgb(239, 239, 239), rgba(34,34,34,0), rgba(34,34,34,0));
+            background-position: 1% 50%;
+            background-size: 300% 300%;
+            text-decoration: none;
+            border: none;
+            border: 1px solid $bg-light;
+            i {
+                color: $txt-light;
+                font-size: 16px;
+                transition: all ease-in-out $quick-animation-time;
+            }
+            &:hover {
+                color: $txt-dark;
+                border: 1px solid $bg-light;
+                background-position: 99% 50%;
+                i {
+                    color:$txt-dark;
+                }
+            }
+            @include media('<=phone') {
+                margin-top: 10px;
+                font-size: 14px;
             }
         }
     }
