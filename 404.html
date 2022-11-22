@@ -75,7 +75,7 @@
             <div class="row h-100">
 
                 <!-- LEFT -->
-                <div class="col col-left">
+                <div class="c__col col-3 col-left">
                     <div class="menu__overlay-left-wrap" id="menu__overlay-left">
                         <ul>
                             <li class="nav__links"><a href="https://www.facebook.com/jom.dalisaymo.10" class="nav__links-link">FACEBOOK</a></li>
@@ -88,11 +88,11 @@
                 </div>
 
                 <!-- CENTER -->
-                <div class="col col-center">
+                <div class="c__col col-5 col-center">
                     <div class="menu__overlay-center-wrap" id="menu__overlay-center">
 
                         <div class="menu__overlay-center-title-wrap">
-                            <p class="menu__overlay-center-title">LATEST PROJECT</p>
+                            <p class="menu__overlay-center-title mb-0">LATEST PROJECT</p>
                         </div>
                         <div class="menu__overlay-center-img-wrap">
                             <div class="menu__overlay-center-img-btn-wrap">
@@ -101,7 +101,7 @@
                             <img class="menu__overlay-center-img" src="/src/images/callees.jpg" alt=""><!--IMAGE-->
                         </div>
                         <div class="menu__overlay-center-project-details-wrap">
-                            <p class="menu__overlay-center-project-title">SAMPLE TITLE<!--TITLE--></p>
+                            <p class="menu__overlay-center-project-title">CALLEE'S KITCHEN<!--TITLE--></p>
                             <p class="menu__overlay-center-project-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut reprehenderit rem dolore molestiae, reiciendis neque quidem molestias pariatur quae iure dolores eligendi dolor maiores doloribus quo voluptatem omnis enim laudantium?<!--DESCRIPTION--></p>
                         </div>
                         <div class="menu__overlay-center-project-btn-wrap">
@@ -112,14 +112,13 @@
                 </div>
 
                 <!-- RIGHT -->
-                <div class="col col-right">
+                <div class="c__col col-4 col-right">
                     <div class="menu__overlay-right-wrap" id="menu__overlay-right">
                         <ul>
-                            <!-- <li><a href="#" class="text-decoration-none menu-nav-links fw-bold nav__links {{ (request()->is('/')) ? 'menu-nav-active' : '' }}">HOME</a></li> -->
-                            <li class="nav__links"><a href="/" class="nav__links-link nav__links-link">HOME</a></li>
-                            <li class="nav__links"><a href="/about" class="nav__links-link">ABOUT</a></li>
-                            <li class="nav__links"><a href="/projects" class="nav__links-link">PROJECTS</a></li>
-                            <li class="nav__links"><a href="/contact" class="nav__links-link">CONTACT</a></li>
+                            <li class="nav__links"><a href="/" class="nav__links-link">HOME</a></li>
+                            <li class="nav__links"><a href="/about.html" class="nav__links-link">ABOUT</a></li>
+                            <li class="nav__links"><a href="/projects.html" class="nav__links-link">PROJECTS</a></li>
+                            <li class="nav__links"><a href="/contact.html" class="nav__links-link">CONTACT</a></li>
                         </ul>
                     </div>
                 </div>
@@ -201,6 +200,119 @@
         </section>
 
 
+        <!-- Web Dev Modal -->
+        <div class="modal fade projectsModalDev projectsModal" id="projectsModalDev" tabindex="-1" aria-labelledby="projectsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header has__hover" data-bs-dismiss="modal" aria-label="Close">
+                        <button type="button" class="has__hover" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-lg py-3">
+    
+                            <div class="modal-project-title-wrap">
+                                <p class="modal-project-title-sub">WEBSITE APPLICATION</p>
+                                <p class="modal-project-title">Project Title</p>
+                                <p class="modal-project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo amet sint vero voluptate modi, quas commodi corporis consequatur nostrum. Tenetur, explicabo perferendis. Hic officiis itaque at! Facere possimus dolorum dolores!</p>
+                            </div>
+    
+                            <div class="modal-project-img-wrap">
+                                <div class="modal-project-img-inner-wrap">
+                                    <div class="modal-project-overlay">
+                                        <a href="#" class="modal-project-overlay-btn">VIEW SITE <i class="fa-solid fa-arrow-right-long"></i></a>
+                                    </div>
+                                    <img src="/src/images/callees.jpg" alt="" class="modal-project-img">
+                                </div>
+                            </div>
+    
+                            <div class="modal-project-details-wrap">
+                                <div class="row">
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="modal-project-details-feat-wrap">
+                                            <p class="modal-project-details-title">PROJECT FEATURES</p>
+                                            <div class="modal-project-details-feat-inner-wrap">
+                                                
+                                                <!-- FEATURES -->
+                                                
+                                                <div class="modal-project-details-feat">
+                                                    <div class="feat-num-wrap">
+                                                        <p class="feat-num">1</p>
+                                                    </div>
+                                                    <div class="feat-name-wrap">
+                                                        <p class="feat-name">Sample Feature</p>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="modal-project-details-feat">
+                                                    <div class="feat-num-wrap">
+                                                        <p class="feat-num">1</p>
+                                                    </div>
+                                                    <div class="feat-name-wrap">
+                                                        <p class="feat-name">Sample Feature</p>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="modal-project-details-feat">
+                                                    <div class="feat-num-wrap">
+                                                        <p class="feat-num">1</p>
+                                                    </div>
+                                                    <div class="feat-name-wrap">
+                                                        <p class="feat-name">Sample Feature</p>
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                        <div class="modal-project-details-tech-wrap">
+                                            <p class="modal-project-details-title">TECHNOLOGY STACKS USED</p>
+                                            <div class="modal-project-details-stack-wrap">
+                                                <!-- STACKS -->
+                                                <div class="modal-project-details-stack">
+                                                    <img src="/src/stacks/html.svg" alt="stack" class="modal-project-details-stack-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        
+        <!-- Web Design Modal -->
+        <div class="modal fade projectsModalDesign projectsModal" id="projectsModalDesign" tabindex="-1" aria-labelledby="projectsModalDesignLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header has__hover" data-bs-dismiss="modal" aria-label="Close">
+                        <button type="button" class="has__hover" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-lg py-3 pb-0">
+    
+                            <div class="modal-project-title-wrap">
+                                <p class="modal-project-title-sub">WEBSITE DESIGNED</p>
+                                <p class="modal-project-title">Project Title</p>
+                                <p class="modal-project-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo amet sint vero voluptate modi, quas commodi corporis consequatur nostrum. Tenetur, explicabo perferendis. Hic officiis itaque at! Facere possimus dolorum dolores!</p>
+                            </div>
+    
+                            <div class="modal-project-img-wrap">
+                                <img src="/src/images/callees-full.jpeg" alt="" class="modal-project-img">
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     <footer class="main__footer">
         <div class="container-lg">
             <div class="main__footer-copy-wrap">
@@ -223,16 +335,7 @@
         </div>
     </footer>
 
-    
-        <script>
-            jQuery(function($) {
-                $(document).ready(function() {
-                    $('.f__banner-content-btn').click(function() {
-                        $('bye').html("BYE👋");
-                    });
-                });
-            });
-        </script>
+
 
     <!-- jQuery -->
     <script src="/assets/jquery/jquery.min.js"></script>
